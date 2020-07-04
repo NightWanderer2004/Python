@@ -1,0 +1,7 @@
+D:\C#\tritritri\tritritri\bin\Debug\tritritri.exe.config
+D:\C#\tritritri\tritritri\bin\Debug\tritritri.exe
+D:\C#\tritritri\tritritri\bin\Debug\tritritri.pdb
+D:\C#\tritritri\tritritri\obj\Debug\tritritri.csprojAssemblyReference.cache
+D:\C#\tritritri\tritritri\obj\Debug\tritritri.csproj.CoreCompileInputs.cache
+D:\C#\tritritri\tritritri\obj\Debug\tritritri.exe
+D:\C#\tritritri\tritritri\obj\Debug\tritritri.pdb
