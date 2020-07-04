@@ -11,8 +11,8 @@ def dist(a,b):
 				rec(i-1,x-1),
 				)
 	return rec(len(a),len(b))
-str1="Hello"
-str2="Olleh"
+str1="Working"
+str2="Gnikrow"
 lev=dist(str1,str2)
 bigger=max([len(str1),len(str2)])
 pct=((bigger-lev)/bigger)*100
