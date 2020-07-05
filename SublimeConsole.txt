@@ -1,0 +1,49 @@
+1. Открываем Sublime Text -> Tools -> Build System -> New Build System
+2. Вставляем в открывшийся файл следующие строки, чтобы получилось вот так: 
+
+{
+    "cmd": ["python3", "-i", "-u", "$file"],
+    "file_regex": "^[ ]File \"(...?)\", line ([0-9]*)",
+    "selector": "source.python"
+}
+
+3. Сохраняем файл с названием python3.sublime-build и не меняем путь предложенный редактором
+4. Идем и ставим галочку Tools -> Build system -> python3
+
+Если вам не требуется передавать через консоль в программу аргументы (например input()), то вы уже можете проверить
+работу создав и сохранив (без сохранения будет ошибка) тестовый файл, а затем нажав Ctrl+B. Снизу 
+появится консоль с выводом результата. 
+Для проверки предлагаю выполнить следующий код: 
+
+import sys
+print(sys.version)
+
+-----Делаем интерактивную консоль-----
+5. Жмем Ctrl+Shift+P -> пишем Install Package -> пишем sublimeREPL и устанавливаем. 
+6. Поскольку в sublimeREPL установлен python 2, то идем в Sublime Text -> Preferences -> Browse Packages
+7. Открываем в текстовом редакторе файл SublimeREPL -> config -> Python -> Main.sublime-menu
+8. Находим внутри этого файла столбик с аргументами children -> args -> cmd и меняем значение "python" на "python3". 
+Сохраняем и закрываем файл. 
+9. Открываем тестовый python-файл (например из пункта 4)
+10. Открываем консоль редактора как в пункте 6 и пишем sublime.log_commands(True)
+11. Sublime Text -> Tools -> sublimeREPL -> Python -> Python RUN current file и затем копируем из консоли строку repl_open 
+целиком со всеми аргументами. 
+12. В консоли пишем sublime.log_commands(False)
+13. Sublime Text -> Preferences -> Key Bindings. Забиндим хоткей для быстрого исполнения файла в интерактивной консоли REPL
+14. Вставьте в User-конфиг (он пустой) следующий код (ключ keys сделайте свой по желанию, в "сommand" пишите "repl_open", а 
+в "args" закидываете все атрибуты которые скопировали из консоли. Их не обязательно так разбивать по строкам, можно все 
+в одну оставить: 
+
+[
+	{ "keys": ["ctrl+b"], 
+	  "command": "repl_open", 
+	  "args": {"cmd": ["python", "-i", "-u", "$file_basename"], 
+	  		   "cwd": "$file_path", 
+	  		   "encoding": "utf8", 
+	  		   "extend_env": {"PYTHONIOENCODING": "utf-8"}, 
+	  		   "external_id": "python", 
+	  		   "syntax": "Packages/Python/Python.tmLanguage", 
+	  		   "type": "subprocess"} },
+]
+
+15. Сохраняем файл, перезапускаем Sublime Text и используем заданный хоткей. 

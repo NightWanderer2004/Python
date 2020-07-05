@@ -11,61 +11,61 @@ namespace Arrays
     {
         static void Main(string[] args)
         {
-            float[] Group = { 500, 240, 320, 400, 145}; 
+            int[] Group = { 500, 240, 320, 400, 145}; 
 
-            Console.WriteLine("First:" + Group[0]);
+            Console.Write("First:" + Group[0] + "  ===");
 
             if(Group[0] >= 500)
             {
-                Console.WriteLine("Всё Ок\n");
+                Console.WriteLine("\tВсё Ок\n");
             }
             else
             {
-                Console.WriteLine("Не Ок\n");
+                Console.WriteLine("\tНе Ок\n");
             }
 
-            Console.WriteLine("Second:" + Group[1]);
+            Console.Write("Second:" + Group[1] + "  ===");
 
             if(Group[1] >= 300)
             {
-                Console.WriteLine("Всё Ок\n");
+                Console.WriteLine("\tВсё Ок\n");
             }
             else
             {
-                Console.WriteLine("Не Ок\n");
+                Console.WriteLine("\tНе Ок\n");
             }
 
-            Console.WriteLine("Third:" + Group[2]);
+            Console.Write("Third:" + Group[2] + "  ===");
 
             if(Group[2] >= 320)
             {
-                Console.WriteLine("Всё Ок\n");
+                Console.WriteLine("\tВсё Ок\n");
             }
             else
             {
-                Console.WriteLine("Не Ок\n");
+                Console.WriteLine("\tНе Ок\n");
             }
 
-            Console.WriteLine("Fourth:" + Group[3]);
+            Console.Write("Fourth:" + Group[3] + "  ===");
 
             if(Group[3] >= 400)
             {
-                Console.WriteLine("Всё Ок\n");
+                Console.WriteLine("\tВсё Ок\n");
             }
             else
             {
-                Console.WriteLine("Не Ок\n");
+                Console.WriteLine("\tНе Ок\n");
             }
 
-            Console.WriteLine("Fifth:" + Group[4]);
+            Console.Write("Fifth:" + Group[4] + "  ===");
 
             if (Group[4] >= 340)
             {
-                Console.WriteLine("Всё Ок\n");
+                Console.WriteLine("\tВсё Ок\n");
             }
             else
             {
-                Console.WriteLine("Не Ок\n");
+                Console.WriteLine("\tНе Ок\n");
             }
 
             Console.ReadLine();
