@@ -1,7 +1,0 @@
-D:\C#\DZ Arrays\Plants\bin\Debug\Plants.exe.config
-D:\C#\DZ Arrays\Plants\bin\Debug\Plants.exe
-D:\C#\DZ Arrays\Plants\bin\Debug\Plants.pdb
-D:\C#\DZ Arrays\Plants\obj\Debug\Plants.csprojAssemblyReference.cache
-D:\C#\DZ Arrays\Plants\obj\Debug\Plants.csproj.CoreCompileInputs.cache
-D:\C#\DZ Arrays\Plants\obj\Debug\Plants.exe
-D:\C#\DZ Arrays\Plants\obj\Debug\Plants.pdb

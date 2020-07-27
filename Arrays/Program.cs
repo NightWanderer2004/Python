@@ -11,7 +11,7 @@ namespace Arrays
     {
         static void Main(string[] args)
         {
-            int[] Group = { 500, 240, 320, 400, 145}; 
+            int[] Group = { 500, 240, 320, 400, 145 }; 
 
             Console.Write("First:" + Group[0] + "  ===");
 

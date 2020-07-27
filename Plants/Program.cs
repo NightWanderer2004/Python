@@ -19,7 +19,7 @@ namespace Plants
                 Console.Write($"|Цветок номер {i + 1} : ");
                 Plants[i] = float.Parse(Console.ReadLine());
             }
-            //Поиск минимальное значение
+            //Поиск минимального значение
             float MinPlant = Plants[0];
 
             for (int i = 1; i < Plants.Length; i++)
